@@ -25,7 +25,7 @@ app.use(express.urlencoded());
 
     app.get('/', function(req,res){
         console.log('this is the get route'); 
-        Todo.find({}, function(err, data){
+        Todo.find({}, function(err, data){ 
             if(data){
                 res.render("todo.ejs",{list:data});
             }
@@ -49,7 +49,7 @@ app.use(express.urlencoded());
         res.redirect('/');
     });
 
-    
+
     app.post('/add', function(req,res)
     {   
         //console.log('this is the post route');
