@@ -1,0 +1,10 @@
+body{
+    background-color: teal;
+    font-family: sans-serif;
+}
+
+
+ol li:hover
+{
+    text-decoration: line-through;
+}
